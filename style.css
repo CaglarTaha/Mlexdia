@@ -35,18 +35,28 @@ body{
 }
 
 .Container-1{
-    background-image: url("ddu9ylk-7e6fc06f-df33-4e82-98eb-71b9ce1a3d68.gif");
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 1000px;
-    width: 100%;
-    border-radius: 5px;
- 
-    padding: 10px;
-    display: flex;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  min-width: 100%;
+
+  
+
 }
+
+.Container-1 img{
+margin-top: 10px;
+margin-left: 100px;
+max-width: 1200px;
+max-height: auto;
+
+  
+
+}
+
 
 .Container-2{
     font-family: 'Poppins', sans-serif;
@@ -180,6 +190,7 @@ border-radius: 2px;
  font-size: 20px;
 }
 .team{
+  margin-bottom: 50px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -223,16 +234,19 @@ border-radius: 2px;
 
   
   .page-wrapper {
+   
     height: 100%;
     display: table;
   }
   
   .page-wrapper .page-inner {
     display: table-cell;
+ 
     vertical-align: middle;
   }
   
   .el-wrapper {
+   
     width: 360px;
     padding: 15px;
     margin: 15px auto;
@@ -546,3 +560,38 @@ border-radius: 2px;
     box-shadow: 5px 5px rgb(230, 230, 230);
 
   }
+
+  @media only screen and (max-width: 600px) {
+  
+
+    .Row{
+      display: flex;
+      flex-direction: column;
+  }
+
+
+  .Container-1 img{
+    display: none;
+ 
+  }
+
+  
+  .Fragman iframe{
+    margin-right: 50px
+     ;
+   max-width: 300px;
+   max-height: 250px;
+    border-radius: 4px;
+    box-shadow: 5px 5px rgb(230, 230, 230);
+
+  }
+  #twitch-embed{
+    display: none;
+  }
+  .Twitch{
+    display: none;
+  }
+  }
+
+
+ 
